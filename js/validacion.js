@@ -51,10 +51,7 @@ function mostrarNotificacion(mensaje) {
     const notificacion = document.getElementById('notificacion');
     const notificacionContainer = document.getElementById('notificacionContainer');
 
-    // Agregar un icono si se proporciona
-    const iconoHTML = '<i class="fa-solid fa-circle-xmark"></i>';
-
-    notificacion.innerHTML = `${iconoHTML} ${mensaje}`;
+    notificacion.innerHTML = `${mensaje}`;
 
     // Mostrar la notificación
     notificacionContainer.style.display = 'block';

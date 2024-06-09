@@ -5,6 +5,10 @@
         scroll-behavior: smooth;
     }
 
+    i{
+        font-size: 3rem;
+    }
+
     /* Menú */
     .menu {
         padding: 1rem 5rem;
@@ -61,6 +65,7 @@
 
     .about__paragraph {
         font-size: 1rem;
+        line-height: 2;
     }
 
     /*Skills and hobbies*/
