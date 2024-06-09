@@ -1,0 +1,346 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --page-background-color: #F5F5F5;
+    --section-background-color: #EAF2FD;
+    --link-color: #000;
+    --white-color: #FFFFFF;
+    --icon-size: 2rem;
+    --ligth-blue-color: #2A7AE4;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--page-background-color);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/*Font Family*/
+button,
+input,
+textarea {
+    font-family: 'Raleway';
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+/***Iconos***/
+i {
+    color: var(--ligth-blue-color)
+}
+
+/***h3***/
+h3 {
+    font-weight: 300;
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*PC Estilos para Moviles*/
+
+/******Sección Menu********/
+
+
+.menu {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Name and icon*/
+.menu__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/*Icono*/
+.menu__header_icon {
+    font-size: 1rem;
+}
+
+/*Nombre*/
+.menu__title {
+    font-size: 0.9rem;
+}
+
+/*navbar items*/
+.menu__list__item {
+    display: none;
+}
+
+.menu__list__item.contact {
+    display: inline;
+    font-size: 0.9rem;
+}
+
+/*****Sección Profile Photo/Bio/Links*****/
+
+section.title {
+    padding: 1rem;
+}
+
+.title_photo {
+    width: 6.125rem;
+    height: 6.125rem;
+}
+
+.title__bio {
+    font-size: 1.375rem;
+}
+
+.title__subsection {
+    font-size: 0.8rem;
+    color: #464646;
+}
+
+.title__network {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title__network__item {
+    font-size: var(--icon-size);
+}
+
+
+/*******Sección About***********/
+
+section.about {
+    background-color: var(--section-background-color);
+    padding: 1rem;
+}
+.about__title{
+    font-weight: bold;
+}
+.about__container img {
+    width: 8.75rem;
+    height: 5rem;
+}
+
+/********Seccíon de Skills y Sección de hobbies*******/
+.skills,
+.hobbies {
+    padding: 1rem;
+}
+
+.skills__title,
+.hobbies__title {
+    text-align: center;
+}
+
+.skills__line,
+.hobbies__line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas de igual ancho */
+    gap: 1rem;
+    /* Espacio uniforme entre los elementos */
+}
+
+.skills__box,
+.hobbies__box {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    height: 8rem;
+}
+
+.skills__name,
+.hobbies__name {
+    margin-top: 0.5rem;
+}
+
+.skills_icon,
+.hobbies__icon {
+    font-size: var(--icon-size);
+}
+
+/**********Experiencia Académica*********/
+
+section.academic {
+    background-color: var(--section-background-color);
+    padding: 2.5rem;
+}
+
+.academic__title {
+    text-align: center;
+}
+
+.academic__courses {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.academic__courses__list,
+.academic__courses__box {
+    margin: 0;
+    padding: 0;
+}
+.academic__courses__box{
+    flex: 1;
+}
+.academic__courses__item__img {
+    background-color: var(--white-color);
+}
+
+.academic__courses__item__img img {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 50%;
+    height: 9.62rem;
+}
+
+/*********experiencia********/
+
+section.experience {
+    padding: 2.5rem;
+}
+
+.experience__section__title {
+    text-align: center;
+}
+
+.experiencie__box {
+    margin-bottom: 3rem;
+}
+
+.experience__img {
+    width: 100%;
+    height: 12rem;
+}
+
+.experience__title {
+    font-size: 1rem;
+}
+
+.experience__text {
+    font-size: 0.8rem;
+}
+
+.experience__btns__container {
+    display: flex;
+    gap: 1rem;
+}
+
+.experience__repo__btn,
+.experience__demo__btn,
+.contact__form__submit {
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.06rem solid var(--ligth-blue-color);
+
+}
+
+.experience__repo__btn {
+    color: var(--ligth-blue-color);
+}
+
+.experience__demo__btn,
+.contact__form__submit {
+    color: var(--white-color);
+    background-color: var(--ligth-blue-color);
+}
+
+
+/*********Contacto**********/
+
+section.formcontato {
+    padding: 2.5rem;
+    background-color: var(--section-background-color);
+}
+
+.contact__form__left__side {
+    display: none;
+}
+
+.contact__form__right__side h2 {
+    font-size: 1.37rem;
+}
+
+.contact__form__right__side h3 {
+    font-size: 1rem;
+}
+
+.contact__form__input__container {
+    display: grid;
+    gap: 1rem;
+}
+
+/*****Form****/
+
+.contact__form__input,
+.contact__form__textarea {
+    border: none;
+    border-bottom: 0.05rem solid #C8C8C8;
+    border-radius: .2rem;
+    padding: 0.5rem;
+}
+
+
+.contact__form__textarea{
+    resize: none;
+}
+
+.contact__form__input:focus,
+.contact__form__textarea:focus {
+    border-bottom: 0.15rem solid var(--ligth-blue-color);
+    outline: none;
+}
+
+.contact__form__submit {
+    margin-top: 2rem;
+}
+
+/***********footer*********/
+
+section.footer  {
+    padding: 2rem;
+    background-color: var(--white-color);
+}
+
+.footer__container p{
+    margin: 0.1rem;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+

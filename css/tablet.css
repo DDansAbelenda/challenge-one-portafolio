@@ -1,0 +1,51 @@
+/*Mobile*/
+/*Estilos para tablet*/
+@media (min-width: 425px) {
+
+    /*Menu*/
+    .menu {
+        padding: 1rem
+    }
+
+    .contact {
+        font-weight: bold;
+    }
+
+    /*Titulo*/
+    .title {
+        padding: 2rem;
+    }
+
+    .title__div {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .title_photo {
+        order: 1;
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    /*Skills and Hobbies*/
+    .skills__line,
+    .hobbies__line {
+        /* Tres columnas de igual ancho */
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*Formación Académica*/
+    .academic__courses {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+
+    /*Experiencia Profesional*/
+    .experience__img {
+        width: 100%;
+        height: 22rem;
+    }
+
+}
